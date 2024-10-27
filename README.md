@@ -1,8 +1,13 @@
-# Vanilla JS Frontend Template
+# PwnFox
 
-This template should be used as a starting point for creating a new plugin with a vanilla JS frontend.
+Workflow to enable customization and coloring HTTP requests from the [PwnFox addon](https://github.com/yeswehack/PwnFox)
 
-## Features
+## Installation
 
-- [pnpm](https://pnpm.io/) as package manager
-- [TypeScript](https://www.typescriptlang.org/)
+Install this plugin directly from the Caido store.
+
+## Usage
+
+This plugin installs a passive workflow that will automatically colorize them based on the custom rules defined in the PwnFox extension.
+
+Enable / disable the workflow from the Workflow page.

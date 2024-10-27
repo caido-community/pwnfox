@@ -12,7 +12,8 @@
     {
       "kind": "workflow",
       "id": "pwnfox-passive",
-      "name": "Passive Workflow"
+      "name": "Passive Workflow",
+      "definition": "workflow/definition.json"
     }
   ]
 }
