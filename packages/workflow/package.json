@@ -1,0 +1,7 @@
+{
+  "name": "workflow",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "mkdir -p ../../dist/workflow/ && cp ./definition.json ../../dist/workflow/definition.json"
+  }
+}

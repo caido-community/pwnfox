@@ -4,9 +4,7 @@
   "version": "0.0.1",
   "description": "Integration with the PwnFox browser extension",
   "author": {
-    "name": "SyzikSecu",
-    "email": "dev@caido.io",
-    "url": "https://x.com/SyzikSecu"
+    "name": "SyzikSecu"
   },
   "plugins": [
     {

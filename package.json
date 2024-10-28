@@ -1,16 +1,16 @@
 {
-  "name": "no-frontend",
+  "name": "pwnfox",
   "version": "0.0.1",
-  "description": "Plugin package template with no frontend",
+  "description": "Integration with the PwnFox browser extension",
   "author": "Caido Labs Inc. <dev@caido.io>",
-  "license": "CC0-1.0",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "typecheck": "pnpm -r typecheck",
     "build": "node scripts/clean.js && pnpm -r build && node scripts/pack.js"
   },
   "devDependencies": {
-    "@caido/plugin-manifest": "0.1.3",
+    "@caido/plugin-manifest": "0.2.0",
     "jszip": "3.10.1",
     "typescript": "5.5.4",
     "vite": "5.2.7"

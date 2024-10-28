@@ -1,5 +1,8 @@
 {
-    "description": "pwnfox",
+    "id": "ccb99345-5d22-49f9-9e33-ed2bd4eea82b",
+    "kind": "passive",
+    "name": "Pwnfox",
+    "description": "Integration with the PwnFox browser extension",
     "edition": 2,
     "graph": {
       "edges": [
@@ -900,8 +903,5 @@
           "version": "0.1.0"
         }
       ]
-    },
-    "id": "ccb99345-5d22-49f9-9e33-ed2bd4eea82b",
-    "kind": "passive",
-    "name": "pwnfox"
+    }
   }
