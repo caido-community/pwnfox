@@ -1,7 +1,7 @@
 {
     "id": "ccb99345-5d22-49f9-9e33-ed2bd4eea82b",
     "kind": "passive",
-    "name": "Pwnfox",
+    "name": "PwnFox",
     "description": "Integration with the PwnFox browser extension",
     "edition": 2,
     "graph": {
