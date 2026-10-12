@@ -35,6 +35,11 @@ if (!validateManifest(data)) {
 }
 fs.copyFileSync(srcManifestPath, destManifestPath);
 
+console.log("[*] Copying README file");
+const srcReadmePath = path.resolve(__dirname, "../README.md");
+const destReadmePath = path.join(DIST, "README.md");
+fs.copyFileSync(srcReadmePath, destReadmePath);
+
 console.log("[*] Creating zip");
 const zip = new JSZip();
 
