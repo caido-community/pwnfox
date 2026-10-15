@@ -1,7 +1,7 @@
 {
   "id": "pwnfox",
   "name": "PwnFox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Integration with the PwnFox browser extension",
   "author": {
     "name": "SyzikSecu"
