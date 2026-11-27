@@ -285,6 +285,46 @@
             "exec_alias": "exec",
             "node_id": 29
           }
+        },
+        {
+          "source": {
+            "exec_alias": "false",
+            "node_id": 27
+          },
+          "target": {
+            "exec_alias": "exec",
+            "node_id": 30
+          }
+        },
+        {
+          "source": {
+            "exec_alias": "exec",
+            "node_id": 30
+          },
+          "target": {
+            "exec_alias": "exec",
+            "node_id": 31
+          }
+        },
+        {
+          "source": {
+            "exec_alias": "true",
+            "node_id": 31
+          },
+          "target": {
+            "exec_alias": "exec",
+            "node_id": 32
+          }
+        },
+        {
+          "source": {
+            "exec_alias": "exec",
+            "node_id": 32
+          },
+          "target": {
+            "exec_alias": "exec",
+            "node_id": 33
+          }
         }
       ],
       "nodes": [
@@ -900,6 +940,92 @@
           "id": 29,
           "inputs": [],
           "name": "Passive End 6",
+          "version": "0.1.0"
+        },
+        {
+          "alias": "matches_httpql_7",
+          "definition_id": "caido/httpql-matches",
+          "display": {
+            "x": 650,
+            "y": -220
+          },
+          "id": 30,
+          "inputs": [
+            {
+              "alias": "request",
+              "value": {
+                "data": "$on_intercept_request.request",
+                "kind": "ref"
+              }
+            },
+            {
+              "alias": "query",
+              "value": {
+                "data": "req.raw.cont:\"X-PwnFox-Color: pink\"",
+                "kind": "string"
+              }
+            }
+          ],
+          "name": "pink",
+          "version": "0.1.0"
+        },
+        {
+          "alias": "if_else_7",
+          "definition_id": "caido/if-else",
+          "display": {
+            "x": 650,
+            "y": -80
+          },
+          "id": 31,
+          "inputs": [
+            {
+              "alias": "condition",
+              "value": {
+                "data": "$matches_httpql_7.matches",
+                "kind": "ref"
+              }
+            }
+          ],
+          "name": "If/Else 7",
+          "version": "0.1.0"
+        },
+        {
+          "alias": "set_color_7",
+          "definition_id": "caido/color-set",
+          "display": {
+            "x": 640,
+            "y": 40
+          },
+          "id": 32,
+          "inputs": [
+            {
+              "alias": "request",
+              "value": {
+                "data": "$on_intercept_request.request",
+                "kind": "ref"
+              }
+            },
+            {
+              "alias": "color",
+              "value": {
+                "data": "#e7068d",
+                "kind": "string"
+              }
+            }
+          ],
+          "name": "Set Color 7",
+          "version": "0.1.0"
+        },
+        {
+          "alias": "passive_end_7",
+          "definition_id": "caido/passive-end",
+          "display": {
+            "x": 650,
+            "y": 150
+          },
+          "id": 33,
+          "inputs": [],
+          "name": "Passive End 7",
           "version": "0.1.0"
         }
       ]
